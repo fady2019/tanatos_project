@@ -1,0 +1,194 @@
+.ourTeam{
+    text-align: center;
+    margin: 80px 0;
+    .subContainer{
+        &>h2{
+            font-size: $mainHeaderSize;
+            font-weight: 500;
+        }
+        &>p{
+            font-size: $mainParaSize;
+            color: $paraColor;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+        .team{
+            margin: 80px 0 0 0 ;
+            @extend %displayFlex, %flexWrap, %justifyCenter, %alignitems;
+            &>div{
+                @include hoverAnimation(.3s);
+                filter: grayscale(1);
+                cursor: pointer;
+                width: 24%;
+                padding: 10px;
+                .image{
+                    position: relative;
+                    overflow: hidden;
+                    width: 220px;
+                    height: 280px;
+                    border-radius: 12px;
+                    margin: auto;
+                    img{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                    }
+                    span{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        @include hoverAnimation(.5s);
+                        width: 0;
+                        height: 4px;
+                        background-color: $mainColor;
+                        z-index: 2;
+                    }
+                }
+                &>span{
+                    display: block;
+                    color: $headerColor;
+                    margin: 10px 0;
+                    font-size: 18px;
+                }
+                .icon{
+                    margin: 10px 0;
+                    i{
+                        font-size: 22px;
+                        margin: 2px;
+                        $ic:(facebook:#3b5998 , twitter:#1da1f2 , googlePlus:#dd4b39 );
+                        @each $i , $c in $ic{
+                            &.#{$i}{
+                                color: $c;
+                            }
+                        }
+                    }
+                }
+                p{
+                    color: $paraColor;
+                    line-height: 1.6;
+                }
+                &:hover{
+                    filter: grayscale(0);
+                    transform: scale(1.1 , 1.1);
+                    .image{
+                        span{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//our team media
+@media (max-width:767px){
+    .ourTeam{
+        .subContainer{
+            &>h2{
+                font-size: 20px;
+            }
+            &>p{
+                font-size: 15px;
+                line-height: 1.6;
+                margin: 10px 0;
+            }
+            .team{
+                margin: 30px 0 0 0 ;
+                &>div{
+                    width: 90%;
+                    margin: 10px auto;
+                    .image{
+                        width: 180px;
+                        height: 240px;
+                    }
+                    &>span{
+                        font-size: 16px;
+                    }
+                    .icon{
+                        i{
+                            font-size: 18px;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:768px) and (max-width:991px){
+    .ourTeam{
+        .subContainer{
+            &>h2{
+                font-size: 30px;
+            }
+            &>p{
+                font-size: 18px;
+            }
+            .team{
+                margin: 50px 0 0 0 ;
+                &>div{
+                    width: 45%;
+                    margin: 20px auto;
+                    .image{
+                        width: 200px;
+                        height: 260px;
+                    }
+                    &>span{
+                        font-size: 18px;
+                    }
+                    .icon{
+                        i{
+                            font-size: 20px;
+                        }
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1199px){
+    .ourTeam{
+        .subContainer{
+            &>h2{
+                font-size: 32px;
+            }
+            &>p{
+                font-size: 20px;
+            }
+            .team{
+                margin: 50px 0;
+                &>div{
+                    width: 22;
+                    margin: 20px 0;
+                    .image{
+                        width: 200px;
+                        height: 260px;
+                    }
+                    &>span{
+                        font-size: 18px;
+                    }
+                    .icon{
+                        i{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

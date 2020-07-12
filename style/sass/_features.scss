@@ -1,0 +1,178 @@
+.features{
+    padding:100px 0;
+    .subContainer{
+        .feat{
+            @extend %displayFlex, %justifyBetween, %alignitems;
+            &>div{
+            width:24%;
+                @extend %displayFlex, %justifyBetween, %alignitems, %flexDirCol;
+                text-align:center;
+                i{
+                    display:block;
+                    width:120px;
+                    height:120px;
+                    border: 1px solid #e2e2e2;
+                    border-radius:50%;
+                    text-align:center;
+                    line-height:120px;
+                    font-size:50px;
+                    color:$mainColor;
+                    @include hoverAnimation(.5s);
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $mainColor;
+                        border: 1px solid $mainColor;
+                        color: #FFF;
+                    }
+                }
+                span{
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    color:$headerColor;
+                    margin: 30px 0;
+                }
+                p{
+                    font-size: 16px;
+                    color: $paraColor;
+                }
+            }
+        }
+    }
+    .sign{
+        position: relative;
+        background-image: url("../images/subscribe.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        z-index: 0;
+        margin-top: 80px;
+        .overlay{
+            @extend %ovLay;
+        }
+        .subContainer{
+            position: relative;
+            z-index: 1;
+            padding: 100px 0;
+            @extend %displayFlex, %justifyCenter, %alignitems;
+            input{
+                border: 1px solid #757575;
+                outline: none;
+                padding: 10px 200px 10px 10px;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+            button{
+                text-transform: uppercase;
+                border: 0;
+                outline: none;
+                background-color: $mainColor;
+                color:#FFF;
+                padding: 10px 50px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+// features media
+@media (max-width:767px){
+    .features{
+        padding:50px 0;
+        .subContainer{
+            .feat{
+                flex-wrap: wrap;
+                &>div{
+                    width:100%;
+                    margin-bottom: 40px;
+                    i{
+                        width:80px;
+                        height:80px;
+                        line-height:80px;
+                        font-size:30px;
+                    }
+                    span{
+                        font-size: 16px;
+                        margin: 20px 0;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .sign{
+            margin-top: 30px;
+            .subContainer{
+                padding: 50px 0;
+                flex-wrap: wrap;
+                input{
+                    width: 100%;
+                    border: 1px solid #757575;
+                    outline: none;
+                    padding:6px 0 6px 10px;
+                    border-radius: 5px;
+                    margin-right: 0;
+                }
+                button{
+                    border: 0;
+                    padding: 8px 30px;
+                    margin:10px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:768px) and (max-width:991px) {
+    .features{
+        padding:50px 0;
+        .subContainer{
+            .feat{
+                flex-wrap: wrap;
+                &>div{
+                    width:48%;
+                    margin-bottom: 40px;
+                    i{
+                        width:100px;
+                        height:100px;
+                        line-height:100px;
+                        font-size:40px;
+                    }
+                    span{
+                        font-size: 18px;
+                        margin: 20px 0;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .features{
+        .subContainer{
+            .feat{
+                &>div{
+                    i{
+                        width:100px;
+                        height:100px;
+                        line-height:100px;
+                        font-size:40px;
+                    }
+                    span{
+                        font-size: 18px;
+                        margin: 20px 0;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,195 @@
+.ourWork{
+    text-align: center;
+    h2{
+        font-size: $mainHeaderSize;
+        font-weight: 500;
+    }
+    .subContainer>p{
+        font-size: $mainParaSize;
+        color: $paraColor;
+        line-height: 1.8;
+        margin: 10px 0;
+    }
+    .works{
+        margin: 80px 0 40px;
+        @extend %displayFlex, %flexWrap, %justifyCenter, %alignitems;
+        &>div{
+            border-radius: 10px;
+            overflow: hidden;
+            width: 28%;
+            height: 380px;
+            position: relative;
+            margin:15px 0;
+            cursor: pointer;
+            &:nth-of-type(2), &:nth-of-type(5){
+                margin:0 30px;
+            }
+            &>div{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            &>div:first-of-type{
+                z-index: 0;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &>div:last-of-type{
+                @include hoverAnimation(.5s);
+                opacity: 0;
+                padding: 15px;
+                color: #FFF;
+                @extend %displayFlex, %justifyCenter, %alignitems, %flexDirCol;
+                z-index: 1;
+                background-color:$mainColorWithAlpha;
+                h3{
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 16px;
+                    margin:15px 0 40px;
+                    line-height: 1.8;
+                }
+                button{
+                    @include hoverAnimation(.3s);
+                    text-transform: uppercase;
+                    border: 1px solid #FFF;
+                    outline: none;
+                    padding: 12px 30px;
+                    color: #FFF;
+                    border-radius: 5px;
+                    background-color: transparent;
+                    font-size:16px;
+                    cursor: pointer;
+                    &:hover{
+                        color:$mainColor;
+                        background-color: #FFF;
+                    }
+                }
+            }
+            &:hover{
+                &>div:last-of-type{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .subContainer>button{
+        outline: none;
+        border: 0;
+        color: $mainColor;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 10px 40px;
+        background-color: #FFF;
+        border-radius: 5px;
+        border: 1px solid $mainColor;
+        cursor: pointer;
+        @include hoverAnimation(.3s);
+        &:hover{
+            background-color: $mainColor;
+            color: #FFF;
+        }
+    }
+}
+
+//our works media
+@media(max-width:499px){
+    .ourWork{
+        .works{
+            &>div{
+                width: 100%;
+                height: 350px;
+            }
+        }
+    }
+}
+@media(min-width:500px) and (max-width:767px){
+    .ourWork{
+        .works{
+            &>div{
+                width: 60%;
+                height: 350px;
+            }
+        }
+    }
+}
+@media (max-width:767px){
+    .ourWork{
+        h2{
+            font-size: 20px;
+        }
+        .subContainer>p{
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .works{
+            margin: 40px 0;
+            flex-wrap: wrap;
+            &>div{
+                margin:15px 0 !important;
+                &>div:last-of-type{
+                    padding: 15px;
+                    h3{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 12px;
+                        margin:10px 0 30px;
+                    }
+                    button{
+                        padding: 8px 20px;
+                        font-size:14px;
+                    }
+                }
+            }
+        }
+        .subContainer>button{
+            font-size: 14px;
+            padding: 8px 30px;
+        }
+    }
+}
+
+
+@media (min-width:768px) and (max-width:991px){
+    .ourWork{
+        h2{
+            font-size: 28px;
+        }
+        .subContainer>p{
+            font-size: 16px;
+        }
+        .works{
+            margin: 60px 0;
+            flex-wrap: wrap;
+            &>div{
+                width: 40%;
+                margin:15px 15px !important;
+                &>div:last-of-type{
+                    padding: 15px;
+                    h3{
+                        font-size: 25px;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin:10px 0 30px;
+                    }
+                    button{
+                        padding: 10px 25px;
+                        font-size:15px;
+                    }
+                }
+            }
+        }
+        .subContainer>button{
+            font-size: 16px;
+            padding: 8px 35px;
+        }
+    }
+}

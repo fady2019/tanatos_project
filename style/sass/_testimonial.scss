@@ -1,0 +1,106 @@
+.testimonial{
+    position: relative;
+    background-image: url("../images/testimon.jpg");
+    background-size: 100% 100%;
+    margin-top: 150px;
+    .overlay{
+        @extend %ovLay;
+    }
+    .subContainer{
+        position: relative;
+        z-index: 1;
+        padding: 75px 0;
+        .swiper-container{
+            text-align: center;
+            .swiper-wrapper{
+                .swiper-slide{
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    p{
+                        color: #FFF;
+                        font-size: 20px;
+                        margin: 30px 0 65px 0;
+                    }
+                    span{
+                        color: #FFF;
+                        font-size: 18px;
+                        font-style: italic;
+                    }
+                }
+            }
+            .arrow{
+                &::after{
+                    color: #FFF;
+                }
+                &:hover::after{
+                    color:$mainColor;
+                }
+            }
+            
+        }
+    }
+}
+
+
+//testimonial media
+
+@media (max-width:767px){
+    .testimonial{
+        margin-top: 150px;
+        .subContainer{
+            padding: 75px 0;
+            .swiper-container{
+                
+                .swiper-wrapper{
+                    .swiper-slide{
+                        img{
+                            width: 50px;
+                            height: 50px;
+                        }
+                        p{
+                            font-size: 12px;
+                            margin: 30px 0 65px 0;
+                        }
+                        span{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .arrow{
+                    top: 50px;
+                    &::after{
+                        font-size: 25px; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:768px) and (max-width:991px){
+    .testimonial{
+        .subContainer{
+            .swiper-container{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        img{
+                            width: 75px;
+                            height: 75px;
+                        }
+                        p{
+                            font-size: 18px;
+                        }
+                        span{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

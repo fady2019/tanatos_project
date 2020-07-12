@@ -1,0 +1,716 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+.subContainer {
+  width: 1180px;
+  margin: auto; }
+
+@media (max-width: 249px) {
+  .subContainer {
+    width: 95%; } }
+@media (min-width: 250px) and (max-width: 499px) {
+  .subContainer {
+    width: 240px; } }
+@media (min-width: 500px) and (max-width: 767px) {
+  .subContainer {
+    width: 460px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .subContainer {
+    width: 750px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .subContainer {
+    width: 970px; } }
+.mainColor {
+  color: #ff5200; }
+
+.header {
+  background-image: url("../images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  color: #FFF;
+  position: relative;
+  z-index: 0; }
+  .header .subContainer {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 25px 0; }
+    .header .subContainer .navbar {
+      width: 100%; }
+      .header .subContainer .navbar .title {
+        font-size: 18px;
+        font-weight: bold; }
+      .header .subContainer .navbar .menu i {
+        font-size: 28px;
+        margin-left: 20px; }
+    .header .subContainer .head {
+      width: 100%; }
+      .header .subContainer .head h1 {
+        text-transform: uppercase;
+        font-size: 45px; }
+      .header .subContainer .head p {
+        text-align: center;
+        margin: 10px 0 25px 0;
+        line-height: 1.8;
+        font-size: 16px; }
+      .header .subContainer .head .buttons button {
+        transition: all 0.3s ease-in-out;
+        outline: none;
+        background-color: transparent;
+        text-transform: uppercase;
+        border: 1px solid #757575;
+        padding: 8px 30px;
+        border-radius: 5px;
+        margin: 0 5px;
+        color: #FFF;
+        font-size: 15px;
+        cursor: pointer; }
+        .header .subContainer .head .buttons button:hover {
+          background-color: #ff5200;
+          border: 1px solid #ff5200; }
+    .header .subContainer .down i {
+      transition: all 0.3s ease-in-out;
+      text-align: center;
+      line-height: 35px;
+      width: 35px;
+      height: 35px;
+      border: 1px solid #757575;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer; }
+      .header .subContainer .down i:hover {
+        background-color: #ff5200;
+        border: 1px solid #ff5200; }
+
+@media (max-width: 767px) {
+  .header .subContainer {
+    padding: 10px 0; }
+    .header .subContainer .navbar .title {
+      font-size: 14px;
+      font-weight: 100; }
+    .header .subContainer .navbar .menu span {
+      font-size: 14px;
+      font-weight: 100; }
+    .header .subContainer .navbar .menu i {
+      font-size: 20px;
+      margin-left: 10px; }
+    .header .subContainer .head h1 {
+      font-size: 20px; }
+    .header .subContainer .head p {
+      margin: 10px 0 25px 0;
+      line-height: 1.6;
+      font-size: 12px; }
+    .header .subContainer .head .buttons button {
+      padding: 4px 10px;
+      border-radius: 5px;
+      margin: 0 5px;
+      font-size: 12px; }
+    .header .subContainer .down i {
+      line-height: 25px;
+      width: 25px;
+      height: 25px;
+      font-size: 12px; } }
+.features {
+  padding: 100px 0; }
+  .features .subContainer .feat > div {
+    width: 24%;
+    text-align: center; }
+    .features .subContainer .feat > div i {
+      display: block;
+      width: 120px;
+      height: 120px;
+      border: 1px solid #e2e2e2;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 120px;
+      font-size: 50px;
+      color: #ff5200;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer; }
+      .features .subContainer .feat > div i:hover {
+        background-color: #ff5200;
+        border: 1px solid #ff5200;
+        color: #FFF; }
+    .features .subContainer .feat > div span {
+      text-transform: uppercase;
+      font-size: 18px;
+      color: #2e2e2e;
+      margin: 30px 0; }
+    .features .subContainer .feat > div p {
+      font-size: 16px;
+      color: #585858; }
+  .features .sign {
+    position: relative;
+    background-image: url("../images/subscribe.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    margin-top: 80px; }
+    .features .sign .subContainer {
+      position: relative;
+      z-index: 1;
+      padding: 100px 0; }
+      .features .sign .subContainer input {
+        border: 1px solid #757575;
+        outline: none;
+        padding: 10px 200px 10px 10px;
+        border-radius: 5px;
+        margin-right: 10px; }
+      .features .sign .subContainer button {
+        text-transform: uppercase;
+        border: 0;
+        outline: none;
+        background-color: #ff5200;
+        color: #FFF;
+        padding: 10px 50px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 10px; }
+
+@media (max-width: 767px) {
+  .features {
+    padding: 50px 0; }
+    .features .subContainer .feat {
+      flex-wrap: wrap; }
+      .features .subContainer .feat > div {
+        width: 100%;
+        margin-bottom: 40px; }
+        .features .subContainer .feat > div i {
+          width: 80px;
+          height: 80px;
+          line-height: 80px;
+          font-size: 30px; }
+        .features .subContainer .feat > div span {
+          font-size: 16px;
+          margin: 20px 0; }
+        .features .subContainer .feat > div p {
+          font-size: 14px; }
+    .features .sign {
+      margin-top: 30px; }
+      .features .sign .subContainer {
+        padding: 50px 0;
+        flex-wrap: wrap; }
+        .features .sign .subContainer input {
+          width: 100%;
+          border: 1px solid #757575;
+          outline: none;
+          padding: 6px 0 6px 10px;
+          border-radius: 5px;
+          margin-right: 0; }
+        .features .sign .subContainer button {
+          border: 0;
+          padding: 8px 30px;
+          margin: 10px 0 0 0; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .features {
+    padding: 50px 0; }
+    .features .subContainer .feat {
+      flex-wrap: wrap; }
+      .features .subContainer .feat > div {
+        width: 48%;
+        margin-bottom: 40px; }
+        .features .subContainer .feat > div i {
+          width: 100px;
+          height: 100px;
+          line-height: 100px;
+          font-size: 40px; }
+        .features .subContainer .feat > div span {
+          font-size: 18px;
+          margin: 20px 0; }
+        .features .subContainer .feat > div p {
+          font-size: 15px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .features .subContainer .feat > div i {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px; }
+  .features .subContainer .feat > div span {
+    font-size: 18px;
+    margin: 20px 0; }
+  .features .subContainer .feat > div p {
+    font-size: 15px; } }
+.ourWork {
+  text-align: center; }
+  .ourWork h2 {
+    font-size: 35px;
+    font-weight: 500; }
+  .ourWork .subContainer > p {
+    font-size: 16px;
+    color: #585858;
+    line-height: 1.8;
+    margin: 10px 0; }
+  .ourWork .works {
+    margin: 80px 0 40px; }
+    .ourWork .works > div {
+      border-radius: 10px;
+      overflow: hidden;
+      width: 28%;
+      height: 380px;
+      position: relative;
+      margin: 15px 0;
+      cursor: pointer; }
+      .ourWork .works > div:nth-of-type(2), .ourWork .works > div:nth-of-type(5) {
+        margin: 0 30px; }
+      .ourWork .works > div > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+      .ourWork .works > div > div:first-of-type {
+        z-index: 0; }
+        .ourWork .works > div > div:first-of-type img {
+          width: 100%;
+          height: 100%; }
+      .ourWork .works > div > div:last-of-type {
+        transition: all 0.5s ease-in-out;
+        opacity: 0;
+        padding: 15px;
+        color: #FFF;
+        z-index: 1;
+        background-color: #ff5100d8; }
+        .ourWork .works > div > div:last-of-type h3 {
+          font-size: 25px;
+          font-weight: 600; }
+        .ourWork .works > div > div:last-of-type p {
+          font-size: 16px;
+          margin: 15px 0 40px;
+          line-height: 1.8; }
+        .ourWork .works > div > div:last-of-type button {
+          transition: all 0.3s ease-in-out;
+          text-transform: uppercase;
+          border: 1px solid #FFF;
+          outline: none;
+          padding: 12px 30px;
+          color: #FFF;
+          border-radius: 5px;
+          background-color: transparent;
+          font-size: 16px;
+          cursor: pointer; }
+          .ourWork .works > div > div:last-of-type button:hover {
+            color: #ff5200;
+            background-color: #FFF; }
+      .ourWork .works > div:hover > div:last-of-type {
+        opacity: 1; }
+  .ourWork .subContainer > button {
+    outline: none;
+    border: 0;
+    color: #ff5200;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px solid #ff5200;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; }
+    .ourWork .subContainer > button:hover {
+      background-color: #ff5200;
+      color: #FFF; }
+
+@media (max-width: 499px) {
+  .ourWork .works > div {
+    width: 100%;
+    height: 350px; } }
+@media (min-width: 500px) and (max-width: 767px) {
+  .ourWork .works > div {
+    width: 60%;
+    height: 350px; } }
+@media (max-width: 767px) {
+  .ourWork h2 {
+    font-size: 20px; }
+  .ourWork .subContainer > p {
+    font-size: 15px;
+    line-height: 1.6; }
+  .ourWork .works {
+    margin: 40px 0;
+    flex-wrap: wrap; }
+    .ourWork .works > div {
+      margin: 15px 0 !important; }
+      .ourWork .works > div > div:last-of-type {
+        padding: 15px; }
+        .ourWork .works > div > div:last-of-type h3 {
+          font-size: 20px; }
+        .ourWork .works > div > div:last-of-type p {
+          font-size: 12px;
+          margin: 10px 0 30px; }
+        .ourWork .works > div > div:last-of-type button {
+          padding: 8px 20px;
+          font-size: 14px; }
+  .ourWork .subContainer > button {
+    font-size: 14px;
+    padding: 8px 30px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .ourWork h2 {
+    font-size: 28px; }
+  .ourWork .subContainer > p {
+    font-size: 16px; }
+  .ourWork .works {
+    margin: 60px 0;
+    flex-wrap: wrap; }
+    .ourWork .works > div {
+      width: 40%;
+      margin: 15px 15px !important; }
+      .ourWork .works > div > div:last-of-type {
+        padding: 15px; }
+        .ourWork .works > div > div:last-of-type h3 {
+          font-size: 25px; }
+        .ourWork .works > div > div:last-of-type p {
+          font-size: 16px;
+          margin: 10px 0 30px; }
+        .ourWork .works > div > div:last-of-type button {
+          padding: 10px 25px;
+          font-size: 15px; }
+  .ourWork .subContainer > button {
+    font-size: 16px;
+    padding: 8px 35px; } }
+.testimonial {
+  position: relative;
+  background-image: url("../images/testimon.jpg");
+  background-size: 100% 100%;
+  margin-top: 150px; }
+  .testimonial .subContainer {
+    position: relative;
+    z-index: 1;
+    padding: 75px 0; }
+    .testimonial .subContainer .swiper-container {
+      text-align: center; }
+      .testimonial .subContainer .swiper-container .swiper-wrapper .swiper-slide img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover; }
+      .testimonial .subContainer .swiper-container .swiper-wrapper .swiper-slide p {
+        color: #FFF;
+        font-size: 20px;
+        margin: 30px 0 65px 0; }
+      .testimonial .subContainer .swiper-container .swiper-wrapper .swiper-slide span {
+        color: #FFF;
+        font-size: 18px;
+        font-style: italic; }
+      .testimonial .subContainer .swiper-container .arrow::after {
+        color: #FFF; }
+      .testimonial .subContainer .swiper-container .arrow:hover::after {
+        color: #ff5200; }
+
+@media (max-width: 767px) {
+  .testimonial {
+    margin-top: 150px; }
+    .testimonial .subContainer {
+      padding: 75px 0; }
+      .testimonial .subContainer .swiper-container .swiper-wrapper .swiper-slide img {
+        width: 50px;
+        height: 50px; }
+      .testimonial .subContainer .swiper-container .swiper-wrapper .swiper-slide p {
+        font-size: 12px;
+        margin: 30px 0 65px 0; }
+      .testimonial .subContainer .swiper-container .swiper-wrapper .swiper-slide span {
+        font-size: 15px; }
+      .testimonial .subContainer .swiper-container .arrow {
+        top: 50px; }
+        .testimonial .subContainer .swiper-container .arrow::after {
+          font-size: 25px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .testimonial .subContainer .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 75px;
+    height: 75px; }
+  .testimonial .subContainer .swiper-container .swiper-wrapper .swiper-slide p {
+    font-size: 18px; }
+  .testimonial .subContainer .swiper-container .swiper-wrapper .swiper-slide span {
+    font-size: 18px; } }
+.ourTeam {
+  text-align: center;
+  margin: 80px 0; }
+  .ourTeam .subContainer > h2 {
+    font-size: 35px;
+    font-weight: 500; }
+  .ourTeam .subContainer > p {
+    font-size: 16px;
+    color: #585858;
+    line-height: 1.8;
+    margin: 10px 0; }
+  .ourTeam .subContainer .team {
+    margin: 80px 0 0 0; }
+    .ourTeam .subContainer .team > div {
+      transition: all 0.3s ease-in-out;
+      filter: grayscale(1);
+      cursor: pointer;
+      width: 24%;
+      padding: 10px; }
+      .ourTeam .subContainer .team > div .image {
+        position: relative;
+        overflow: hidden;
+        width: 220px;
+        height: 280px;
+        border-radius: 12px;
+        margin: auto; }
+        .ourTeam .subContainer .team > div .image img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1; }
+        .ourTeam .subContainer .team > div .image span {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transition: all 0.5s ease-in-out;
+          width: 0;
+          height: 4px;
+          background-color: #ff5200;
+          z-index: 2; }
+      .ourTeam .subContainer .team > div > span {
+        display: block;
+        color: #2e2e2e;
+        margin: 10px 0;
+        font-size: 18px; }
+      .ourTeam .subContainer .team > div .icon {
+        margin: 10px 0; }
+        .ourTeam .subContainer .team > div .icon i {
+          font-size: 22px;
+          margin: 2px; }
+          .ourTeam .subContainer .team > div .icon i.facebook {
+            color: #3b5998; }
+          .ourTeam .subContainer .team > div .icon i.twitter {
+            color: #1da1f2; }
+          .ourTeam .subContainer .team > div .icon i.googlePlus {
+            color: #dd4b39; }
+      .ourTeam .subContainer .team > div p {
+        color: #585858;
+        line-height: 1.6; }
+      .ourTeam .subContainer .team > div:hover {
+        filter: grayscale(0);
+        transform: scale(1.1, 1.1); }
+        .ourTeam .subContainer .team > div:hover .image span {
+          width: 100%; }
+
+@media (max-width: 767px) {
+  .ourTeam .subContainer > h2 {
+    font-size: 20px; }
+  .ourTeam .subContainer > p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 10px 0; }
+  .ourTeam .subContainer .team {
+    margin: 30px 0 0 0; }
+    .ourTeam .subContainer .team > div {
+      width: 90%;
+      margin: 10px auto; }
+      .ourTeam .subContainer .team > div .image {
+        width: 180px;
+        height: 240px; }
+      .ourTeam .subContainer .team > div > span {
+        font-size: 16px; }
+      .ourTeam .subContainer .team > div .icon i {
+        font-size: 18px; }
+      .ourTeam .subContainer .team > div p {
+        font-size: 14px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .ourTeam .subContainer > h2 {
+    font-size: 30px; }
+  .ourTeam .subContainer > p {
+    font-size: 18px; }
+  .ourTeam .subContainer .team {
+    margin: 50px 0 0 0; }
+    .ourTeam .subContainer .team > div {
+      width: 45%;
+      margin: 20px auto; }
+      .ourTeam .subContainer .team > div .image {
+        width: 200px;
+        height: 260px; }
+      .ourTeam .subContainer .team > div > span {
+        font-size: 18px; }
+      .ourTeam .subContainer .team > div .icon i {
+        font-size: 20px; }
+      .ourTeam .subContainer .team > div p {
+        font-size: 16px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ourTeam .subContainer > h2 {
+    font-size: 32px; }
+  .ourTeam .subContainer > p {
+    font-size: 20px; }
+  .ourTeam .subContainer .team {
+    margin: 50px 0; }
+    .ourTeam .subContainer .team > div {
+      width: 22;
+      margin: 20px 0; }
+      .ourTeam .subContainer .team > div .image {
+        width: 200px;
+        height: 260px; }
+      .ourTeam .subContainer .team > div > span {
+        font-size: 18px; }
+      .ourTeam .subContainer .team > div .icon i {
+        font-size: 20px; } }
+.sayHelloAndFooter .sayHello {
+  position: relative;
+  background-image: url("../images/joinIn.jpg");
+  background-size: 100% 100%; }
+  .sayHelloAndFooter .sayHello .subContainer {
+    padding: 80px 0;
+    position: relative;
+    z-index: 2;
+    color: #FFF;
+    text-align: center; }
+    .sayHelloAndFooter .sayHello .subContainer > h2 {
+      font-size: 35px;
+      font-weight: 500; }
+    .sayHelloAndFooter .sayHello .subContainer > p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin: 10px 0; }
+    .sayHelloAndFooter .sayHello .subContainer form {
+      margin-top: 80px; }
+      .sayHelloAndFooter .sayHello .subContainer form > div:first-of-type {
+        width: 80%; }
+        .sayHelloAndFooter .sayHello .subContainer form > div:first-of-type input {
+          width: 48%;
+          padding: 10px 0 10px 10px;
+          outline: none;
+          border: 1px solid #757575;
+          border-radius: 5px; }
+      .sayHelloAndFooter .sayHello .subContainer form textarea {
+        width: 80%;
+        min-height: 200px;
+        resize: vertical;
+        padding: 10px 0 0 10px;
+        outline: none;
+        border: 1px solid #757575;
+        border-radius: 5px;
+        margin: 25px 0; }
+      .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type {
+        width: 80%; }
+        .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type button {
+          text-transform: uppercase;
+          border: 0;
+          outline: none;
+          background-color: #ff5200;
+          color: #FFF;
+          padding: 10px 60px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px; }
+        .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type div i {
+          font-size: 30px;
+          margin-left: 8px;
+          cursor: pointer; }
+          .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type div i:hover.facebook {
+            color: #3b5998; }
+          .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type div i:hover.twitter {
+            color: #1da1f2; }
+          .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type div i:hover.google-plus {
+            color: #dd4b39; }
+          .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type div i:hover.dribbble {
+            color: #ea4c89; }
+          .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type div i:hover.behance {
+            color: #1769ff; }
+.sayHelloAndFooter footer {
+  background-color: #3b434c;
+  color: #FFF;
+  text-align: center;
+  padding: 25px 5px;
+  font-size: 18px; }
+
+.toUp {
+  display: none;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 500;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 65px;
+  cursor: pointer;
+  border: 1px solid #ff5200; }
+  .toUp i {
+    color: #ff5200;
+    font-size: 28px; }
+  .toUp:hover {
+    background-color: #ff5200; }
+    .toUp:hover i {
+      color: #FFF; }
+
+@media (max-width: 499px) {
+  .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type {
+    justify-content: center !important; } }
+@media (max-width: 767px) {
+  .sayHelloAndFooter .sayHello .subContainer {
+    padding: 80px 0; }
+    .sayHelloAndFooter .sayHello .subContainer > h2 {
+      font-size: 20px; }
+    .sayHelloAndFooter .sayHello .subContainer > p {
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 10px 0; }
+    .sayHelloAndFooter .sayHello .subContainer form {
+      margin-top: 50px; }
+      .sayHelloAndFooter .sayHello .subContainer form > div:first-of-type {
+        width: 90%; }
+        .sayHelloAndFooter .sayHello .subContainer form > div:first-of-type input {
+          width: 100%;
+          padding: 8px 0 8px 5px;
+          margin: 5px 0; }
+      .sayHelloAndFooter .sayHello .subContainer form textarea {
+        width: 90%;
+        min-height: 100px;
+        padding: 10px 0 0 10px;
+        margin: 15px 0; }
+      .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type {
+        width: 90%; }
+        .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type button {
+          padding: 8px 40px;
+          font-size: 12px;
+          margin: 10px 0; }
+        .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type div i {
+          font-size: 20px;
+          margin: 0 5px !important; }
+  .sayHelloAndFooter footer {
+    font-size: 12px;
+    line-height: 1.5; }
+
+  .toUp {
+    width: 30px;
+    height: 30px;
+    bottom: 10px;
+    right: 10px;
+    line-height: 25px; }
+    .toUp i {
+      color: #ff5200;
+      font-size: 14px; } }
+.header .subContainer, .header .subContainer .navbar, .header .subContainer .navbar .menu, .header .subContainer .head, .features .subContainer .feat, .features .subContainer .feat > div, .features .sign .subContainer, .ourWork .works, .ourWork .works > div > div:last-of-type, .ourTeam .subContainer .team, .sayHelloAndFooter .sayHello .subContainer form, .sayHelloAndFooter .sayHello .subContainer form > div:first-of-type, .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type {
+  display: flex; }
+
+.features .sign .subContainer, .ourWork .works, .ourWork .works > div > div:last-of-type, .ourTeam .subContainer .team, .sayHelloAndFooter .sayHello .subContainer form {
+  justify-content: center; }
+
+.header .subContainer, .header .subContainer .navbar, .header .subContainer .navbar .menu, .header .subContainer .head, .features .subContainer .feat, .features .subContainer .feat > div, .sayHelloAndFooter .sayHello .subContainer form > div:first-of-type, .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type {
+  justify-content: space-between; }
+
+.header .subContainer, .header .subContainer .navbar, .header .subContainer .navbar .menu, .header .subContainer .head, .features .subContainer .feat, .features .subContainer .feat > div, .features .sign .subContainer, .ourWork .works, .ourWork .works > div > div:last-of-type, .ourTeam .subContainer .team, .sayHelloAndFooter .sayHello .subContainer form, .sayHelloAndFooter .sayHello .subContainer form > div:first-of-type, .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type {
+  align-items: center; }
+
+.ourWork .works, .ourTeam .subContainer .team, .sayHelloAndFooter .sayHello .subContainer form > div:first-of-type, .sayHelloAndFooter .sayHello .subContainer form > div:last-of-type {
+  flex-wrap: wrap; }
+
+.header .subContainer, .header .subContainer .head, .features .subContainer .feat > div, .ourWork .works > div > div:last-of-type, .sayHelloAndFooter .sayHello .subContainer form {
+  flex-direction: column; }
+
+.header .overlay, .features .sign .overlay, .testimonial .overlay, .sayHelloAndFooter .sayHello .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #383e45d4; }
+
+/*# sourceMappingURL=allStyles.css.map */

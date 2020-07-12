@@ -1,0 +1,97 @@
+$mainColor:#ff5200;
+$overlayBackground:#383e45d4;
+$headerColor:rgb(46, 46, 46);
+$paraColor:rgb(88, 88, 88);
+$mainColorWithAlpha:#ff5100d8;
+$mainHeaderSize:35px;
+$mainParaSize:16px;
+
+@mixin hoverAnimation($time) {
+    transition: all $time ease-in-out ;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+//container media
+.subContainer{
+    width:1180px;
+    margin:auto;
+}
+
+@media (max-width:249px){
+    .subContainer{
+        width: 95%;
+    }
+}
+@media (min-width:250px) and (max-width:499px){
+    .subContainer{
+        width:240px;
+    }
+}
+@media (min-width:500px) and (max-width:767px){
+    .subContainer{
+        width:460px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .subContainer{
+        width:750px;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .subContainer{
+        width:970px;
+    }
+}
+
+//span main color
+.mainColor{
+    color:$mainColor
+}
+
+
+@import "header", " features", "ourWork", "testimonial", "ourTeam", "sayHello";
+
+
+
+%displayFlex{
+    display:flex;
+}
+%justifyCenter{
+    justify-content:center;
+}
+%justifyBetween{
+    justify-content:space-between;
+}
+%justifyAround{
+    justify-content:space-around;
+}
+%alignitems{
+    align-items:center;
+}
+%flexWrap{
+    flex-wrap:wrap;
+}
+%flexNoWrap{
+    flex-wrap:nowrap;
+}
+%flexDirCol{
+    flex-direction:column
+}
+
+
+%ovLay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+    background-color: $overlayBackground;
+}
